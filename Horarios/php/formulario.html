@@ -1,0 +1,74 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="formu.png">
+  <a href="formula.css">
+</head>
+<body>
+  
+  <div class="container mt-5"> 
+    <h2>Vamos a poner unos datos primero para tu sugerencia:</h2>
+    <form method="POST" onsubmit="mostrarMensaje()">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo:</label>
+        <input type="email" class="form-control" name="correo" id="correo" placeholder="Ingrese su correo electrónico" required>
+      </div>
+
+      <div class="form-group">
+        <label for="numero">Número:</label>
+        <input type="tel" class="form-control" name="numero" id="numero" placeholder="Ingrese su número de teléfono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tipo-identificacion">Tipo de Identificación:</label>
+        <select class="form-control" name="tipo_identificacion" id="tipo-identificacion" required>
+          <option value="">Seleccione un tipo de identificación</option>
+          <option value="cedula">Cédula de Ciudadanía</option>
+          <option value="tarjeta-identidad">Tarjeta de Identidad</option>
+          <option value="pasaporte">Pasaporte</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="num-identificacion">Número de Identificación:</label>
+        <input type="text" class="form-control" name="num_identificacion" id="num-identificacion" placeholder="Ingrese su número de identificación" required>
+      </div>
+
+      <div class="form-group">
+        <label for="consulta">Sugerencia:</label>
+        <textarea class="form-control" name="consulta" id="consulta" rows="4" placeholder="Escriba su sugerencia aqui" required></textarea>
+      </div>
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="terminos" required>
+        <label class="form-check-label" for="terminos">
+          Acepto los términos y condiciones.
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function mostrarMensaje() {
+      alert("Enviado con éxito");
+    }
+  </script>
+</body>
+
+</html>
