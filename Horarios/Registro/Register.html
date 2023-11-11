@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Register.css">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="re.png" />
+</head>
+<body>
+<div class="img" src="regist.jpg">
+    <div class="container">
+        <h1>Registrarse</h1>
+        <form method="post" action="Registro.php">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+
+            <label for="email">Correo Electronico:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefono">Número Telefonico:</label>
+            <input type="text" name="telefono" id="telefono" required>
+
+            <label for="tipo_identificacion">Tipo de Identificacion:</label>
+            <select name="tipo_identificacion" id="tipo_identificacion" required>
+                <option value="CI">CI</option>
+                <option value="CE">CE</option>
+            </select>
+
+            <label for="numero_identificacion">Número de Identificacion:</label>
+            <input type="text" name="numero_identificacion" id="numero_identificacion" required>
+
+            <label for="genero">Genero:</label>
+            <select name="genero" id="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" name="domicilio" id="domicilio" required>
+
+            <label for="aceptar_correos">Aceptar recibir correos de notificacion y novedades:</label>
+            <input type="checkbox" name="aceptar_correos" id="aceptar_correos">
+            
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+</div>
+</body>
+</html>

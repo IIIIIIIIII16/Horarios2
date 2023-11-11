@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Soporte.css">
+    <link rel="shortcut icon" href="support.png" />
+    <title>Contactarse</title>
+</head>
+<body>
+<div class="img" src="fondo.png">
+    <div class="container">
+        <h1>Contacto</h1>
+        <form method="post" action="Contacto.php">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" name="nombre" id="nombre" maxlength="60" required>
+
+            <label for="email">Correo Electronico:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefono">Numero telefonico:</label>
+            <input type="text" name="telefono" id="telefono" maxlength="16" required>
+
+            <label for="tipo_identificacion">Tipo de Identificacion:</label>
+            <select name="tipo_identificacion" id="tipo_identificacion" required>
+                <option value="CI">CI</option>
+                <option value="CE">CE</option>
+            </select>
+
+            <label for="numero_identificacion">Numero de Identificacion:</label>
+            <input type="text" name="numero_identificacion" id="numero_identificacion" required>
+
+            <label for="consulta">Consulta:</label>
+            <textarea name="consulta" id="consulta" rows="4" cols="50" maxlength="300" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+</body>
+</html>
